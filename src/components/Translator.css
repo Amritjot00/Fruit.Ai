@@ -1,0 +1,88 @@
+/* Container for the whole translator component */
+.translator-container {
+  width: 500px;
+  margin: 40px auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+/* Title styling */
+.translator-title {
+  font-size: 24px;
+  color: #4caf50;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Main box styling */
+.translator-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Language selection dropdowns */
+.language-selection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.language-selection label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.language-selection select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* Text areas for input and output */
+.text-areas {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.input-text, .output-text {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  min-height: 150px;
+  resize: none;
+}
+
+/* Styling for input and output text areas */
+.input-text {
+  background-color: #f1f1f1;
+}
+
+.output-text {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+/* Translate button styling */
+.translate-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.translate-button:hover {
+  background-color: #45a049;
+}

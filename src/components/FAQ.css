@@ -1,0 +1,83 @@
+/* Container styling for FAQ */
+.faq-container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+/* Title styling */
+.faq-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 30px;
+}
+
+/* FAQ item container */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Individual FAQ items */
+.faq-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Image section */
+.faq-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Content section */
+.faq-content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.faq-content h3 {
+  font-size: 22px;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.faq-content p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .faq-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .faq-content {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
